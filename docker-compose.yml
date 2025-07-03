@@ -1,0 +1,6 @@
+services:
+  restaurants.api:
+    image: ${DOCKER_REGISTRY-}restaurantsapi
+    build:
+      context: .
+      dockerfile: Restaurants.API/Dockerfile
